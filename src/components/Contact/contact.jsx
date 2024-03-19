@@ -8,9 +8,9 @@ function Contact() {
     return (
         <section id="contactPage">
             <div id="clients">
-                <h1 className="contactPageTitle">
+                <h3 className="contactPageTitle">
                     My Clients
-                </h1>
+                </h3>
                 <p className="clientsDesc">
                     I have worked with a variety of clients, from small businesses to large corporations.
                 </p>
