@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/navbar"
-import Intro from "./components/Intro/intro";
+// import Intro from "./components/Intro/intro";
 // import Skills from "./components/Skills/skills"
 // import Works from "./components/Works/work";
 // import Contact from "./components/Contact/contact";
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <Navbar/>
-   <Intro/>
+   {/* <Intro/> */}
      {/* <Skills/>
     <Works/>
     <Contact/>
