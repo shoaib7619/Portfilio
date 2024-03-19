@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "img": "Fb.png",
+        "link": "https://www.facebook.com/profile.php?id=100010405754427&mibextid=ZbWKwL",
+        "title": "Facebook"
+    }, 
+    {
+        "id": "2",
+        "img": "instagram.png",
+        "link": "https://www.instagram.com/shoaib_7619?igsh=MTQ4amo3YTUwdHAxaw==",
+        "title": "Instagram"
+    },
+    {
+        "id": "3",
+        "img": "linkedin.png",
+        "link": "https://www.linkedin.com/in/muhammad-shoaib-0837b922a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "title": "LinkedIn Profile"
+    }, 
+    {
+        "id": "4",
+        "img": "twitter.png",
+        "link": "https://x.com/i_m_shoaib7619?s=08",
+        "title": "Twitter"
+    }
+
+  ]

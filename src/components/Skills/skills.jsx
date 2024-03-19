@@ -1,6 +1,6 @@
-import {skillData} from './skill';
+import skillData from './skill.json';
 import './skill.css';
-import SkillImg from "../../assets/developer.png"
+const imgSrc = `./assets/`;
 
 function Skill() {
   return (
@@ -10,8 +10,8 @@ function Skill() {
         <div className="skillBars">
         {skillData.map((skillData) => (
             <div className="skillBar" key={skillData.id}>
-            {/* <img src={skillData.icon} alt={skillData.title} className="skillBarImg" /> */}
-            <img src={SkillImg} alt={skillData.title} className="skillBarImg" />
+            <img src={imgSrc+skillData.img} alt={skillData.title} className="skillBarImg" />
+            {/* <img src={SkillImg} alt={skillData.title} className="skillBarImg" /> */}
             <div className="skillBarText">
               <h2>{skillData.title}</h2>
               <p>{skillData.description}</p>

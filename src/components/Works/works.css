@@ -32,6 +32,8 @@
     object-fit: cover;
     height: 20rem;
     margin: 0.5rem;
+    border-radius: 2rem;
+
 }
 
 .workBtn{
@@ -44,8 +46,10 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 480px) {
     .workImg{
-        height: 50vw;
+        height: 40vw;
+        border-radius: 2rem;
     }
 }
+
