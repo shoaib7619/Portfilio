@@ -1,9 +1,8 @@
-.navbar{
-    /* background: rgb(30, 30, 30); */
+.navbar {
     background: rgb(85, 85, 85);
     height: 5rem;
-    width: 100vw;
-    max-width: 80rem;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
@@ -13,16 +12,19 @@
     top: 0;
     z-index: 3;
 }
-.logo{
-    object-fit: cover;
-    height: 10rem;
-    width: 11rem;
+
+.logo {
+    object-fit: contain; /* Adjusted to contain */
+    max-height: 4rem; /* Adjusted */
+    width: auto; /* Adjusted */
 }
-.desktopMenuListItem{
-    margin: 1.5rem;
+
+.desktopMenuListItem {
+    margin: 0 1.5rem; /* Adjusted */
     cursor: pointer;
 }
-.desktopbtn{
+
+.desktopbtn {
     background: white;
     color: black;
     border: none;
@@ -31,54 +33,67 @@
     justify-content: center;
     padding: 0 1rem;
     border-radius: 2rem;
-    height: 2rem;
-}
-.desktopMenuListItem:hover{
-    color:#0CADCF;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid #0CADCF;
+    height: 2.5rem; /* Adjusted */
 }
 
-.active{
-    color: #0CADCF;
+.desktopMenuListItem:hover {
+    color: #0cadcf;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #0CADCF;
+    border-bottom: 3px solid #0cadcf;
 }
 
-.navMenu{
+.active {
+    color: #0cadcf;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #0cadcf;
+}
+
+.navMenu {
     position: absolute;
-    top: 4rem;
+    top: 5rem; /* Adjusted */
     right: 2rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    height: fit-content;
     min-width: 15rem;
     background: rgb(85, 85, 85);
     border-radius: 1rem;
 }
-.listItem{
+
+.listItem {
     color: white;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem; /* Adjusted */
     margin: 0.25rem;
     background: rgb(73, 73, 73);
 }
-.mobMenu{
-    display: none;
-    object-fit: cover;
-    height: 1.8rem;
 
+.mobMenu {
+    display: none;
+    height: 2rem; /* Adjusted */
 }
-@media screen and (max-width: 768px ){
-    .mobMenu{
+
+/* Adjustments for mobile view */
+@media screen and (max-width: 720px) {
+    .mobMenu {
         display: flex;
     }
-    .desktopmenu{
+
+    .desktopMenuListItem,
+    .desktopbtn {
         display: none;
     }
-    .desktopbtn{
-        display: none;
+
+    .navMenu {
+        position: fixed; /* Adjusted */
+        top: 4.5rem; /* Adjusted */
+        right: 1rem; /* Adjusted */
+        width: calc(100% - 2rem); /* Adjusted */
+        max-width: 20rem; /* Adjusted */
+        border-radius: 0.5rem; /* Adjusted */
     }
-    
+
+    .listItem {
+        padding: 0.5rem 1rem; /* Adjusted */
+    }
 }
