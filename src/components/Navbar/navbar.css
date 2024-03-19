@@ -70,7 +70,7 @@
     height: 1.8rem;
 
 }
-@media screen and (max-width:720px ){
+@media screen and (max-width: 768px ){
     .mobMenu{
         display: flex;
     }

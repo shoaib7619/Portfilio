@@ -46,7 +46,7 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .workImg{
         height: 36vw;
         border-radius: 2rem;
