@@ -65,8 +65,9 @@
 
 @media screen and (max-width: 480px) {
     .bg{
-        right: 1vw;
-        height: fit-content;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
     }
     .introContent{
         margin-top: 7rem;
