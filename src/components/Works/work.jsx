@@ -6,7 +6,7 @@ const imgSrc = `./assets/`;
 function Works() {
   return (
     <section id="works">
-        <h3 className="workstitle">My Portfolio</h3>
+        <h2 className="workstitle">My Portfolio</h2>
         <span className="worksDesc">You can view any project by clicking on it.</span>
         <div className="workImgs">
         {project.map((p) => (

@@ -9,8 +9,8 @@ function App() {
   return (
     <>
     <Navbar/>
-   <Intro/>
-     <Skills/>
+    <Intro/>
+    <Skills/>
     <Works/>
     <Contact/>
     <Footer/>

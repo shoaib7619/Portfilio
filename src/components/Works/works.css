@@ -30,7 +30,7 @@
 }
 .worksImg{
     object-fit: cover;
-    height: 20rem;
+    height: 17rem;
     margin: 0.5rem;
     border-radius: 2rem;
 
@@ -46,9 +46,9 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .workImg{
-        height: 36vw;
+        height: -20vw;
         border-radius: 2rem;
     }
 }
