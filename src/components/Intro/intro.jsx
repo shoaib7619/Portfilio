@@ -1,6 +1,6 @@
 // import React from 'react'
 import './intro.css';
-import profile from '/assets/profile.png'
+import profile from '/assets/profile.jpg'
 import { Link } from 'react-scroll';
 
 function Intro() {

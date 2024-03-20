@@ -1,9 +1,30 @@
+import { useRef } from 'react';
 import './contact.css';
 import client from './clientData.json';
 import socialMedia from './socialMedia.json';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
     const imgSrc = `./assets/`;
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_fwslfer', 'template_8bmqwpu', form.current, {
+            publicKey: 'HZvPMDgvYMKp7gwK4',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              form.current.reset();
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
 
     return (
         <section id="contactPage">
@@ -23,11 +44,11 @@ function Contact() {
             <div id="contact">
                 <h1 className="contentPageTitle">Contact Me</h1>
                 <span className="contentDesc">Please fill out the form below to discuss any work opportunities</span>
-                <form className="contactForm">
-                    <input type="text" className='name' placeholder='Your Name'/>
-                    <input type="email" className='email' placeholder='Your Email'/>
+                <form className="contactForm" ref={form} onSubmit={sendEmail}>
+                    <input type="text" className='name' placeholder='Your Name' name="from_name"/>
+                    <input type="email" className='email' placeholder='Your Email' name='email_id'/>
                     <textarea className="msg" name='message' rows="5"  placeholder='Your Message'></textarea>
-                    <button type='submit' value="send" className="submitBtn">Submit</button>
+                    <button type='submit' value="Send" className="submitBtn">Submit</button>
 
                     <div className="links">
                     {socialMedia.map((socialMedia) =>(
