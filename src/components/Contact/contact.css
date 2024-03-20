@@ -11,12 +11,14 @@
 }
 
 .contactPageTitle{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 3rem;  
 }
 .clientsDesc{
     font-size: 1rem;
-    font-weight: 300;   
+    font-weight: 300;
+    padding: 4px;
+
 }
 .clientImgs {
     display: flex;
@@ -42,6 +44,7 @@
     padding: 2rem;
 }
 .contentPageTitle{
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
