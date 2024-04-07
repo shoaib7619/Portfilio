@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './contact.css';
 import client from './clientData.json';
 import socialMedia from './socialMedia.json';
