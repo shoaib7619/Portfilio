@@ -1,19 +1,15 @@
-import { useRef, useState } from 'react';
+import { useRef} from 'react';
 import './contact.css';
 import client from './clientData.json';
 import socialMedia from './socialMedia.json';
 import emailjs from '@emailjs/browser';
-import { Roller } from 'react-awesome-spinners';
 
 function Contact() {
     const imgSrc = `./assets/`;
     const form = useRef();
-    const [loading, setLoading] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
-        setLoading(true); // Show loader when form is submitted
-
         emailjs
           .sendForm('service_fwslfer', 'template_8bmqwpu', form.current, {
             publicKey: 'HZvPMDgvYMKp7gwK4',
@@ -27,18 +23,10 @@ function Contact() {
               console.log('FAILED...', error.text);
             }
           )
-          .finally(() => {
-            setLoading(false); // Hide loader when email is sent (success or failure)
-          });
       };
 
     return (
         <section id="contactPage">
-            {loading && (
-                <div className="spinner-overlay">
-                    <Roller />
-                </div>
-            )}
             <div id="clients">
                 <h1 className="contactPageTitle">
                     My Clients
